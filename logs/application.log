@@ -1,3 +1,68 @@
 2026-07-17 16:39:02,603 | INFO | EnterpriseKnowledgeAssistant | Application started successfully.
 2026-07-17 16:39:02,603 | WARNING | EnterpriseKnowledgeAssistant | This is a warning.
 2026-07-17 16:39:02,603 | ERROR | EnterpriseKnowledgeAssistant | This is an error message.
+2026-07-17 19:39:25,660 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 19:39:25,661 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 19:39:25,662 | ERROR | EnterpriseKnowledgeAssistant | Error loading DOCX data\sample_documents\Employee_Handbook.docx: No module named 'docx2txt'
+2026-07-17 19:39:25,662 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 19:39:26,255 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 19:39:26,255 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 19:39:26,255 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 19:39:26,256 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 19:47:47,331 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 19:47:47,331 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 19:47:47,471 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 19:47:47,918 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 19:47:47,918 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 19:47:47,919 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 19:47:47,933 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:05:39,496 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:05:39,496 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:05:39,552 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:05:39,959 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:05:39,960 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:05:39,960 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:05:39,960 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:11:01,313 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:11:01,313 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:11:01,369 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:11:01,799 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:11:01,799 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:11:01,800 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:11:01,800 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 22
+2026-07-17 20:12:38,033 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:12:38,034 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:12:38,094 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:12:38,524 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:12:38,525 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:12:38,525 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:12:38,526 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:13:44,003 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:13:44,004 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:13:44,063 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 20:13:44,063 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:13:44,463 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:13:44,464 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:13:44,464 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:13:44,464 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:13:44,465 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:15:19,672 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:15:19,673 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:15:19,729 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 20:15:19,729 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:15:20,151 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:15:20,152 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:15:20,152 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:15:20,152 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:15:20,153 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:17:07,503 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\copy
+2026-07-17 20:17:07,504 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 0
+2026-07-17 20:17:07,504 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:17:07,561 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 20:17:07,561 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:17:07,988 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:17:07,988 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:17:07,988 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
