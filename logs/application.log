@@ -1,0 +1,3 @@
+2026-07-17 16:39:02,603 | INFO | EnterpriseKnowledgeAssistant | Application started successfully.
+2026-07-17 16:39:02,603 | WARNING | EnterpriseKnowledgeAssistant | This is a warning.
+2026-07-17 16:39:02,603 | ERROR | EnterpriseKnowledgeAssistant | This is an error message.
