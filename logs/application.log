@@ -66,3 +66,52 @@
 2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
 2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
 2026-07-17 20:17:07,989 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 20:28:30,119 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 20:28:30,219 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 20:28:30,220 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 20:28:31,241 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 20:28:31,244 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:28:31,248 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 20:28:31,251 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 20:28:31,256 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 20:28:31,260 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 23:12:44,006 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 23:12:44,085 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 23:12:44,086 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 23:12:44,567 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 23:12:44,568 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 23:12:44,568 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 23:12:44,568 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 23:12:44,568 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 23:12:44,570 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 23:12:44,571 | INFO | EnterpriseKnowledgeAssistant | Starting text splitting for 11 documents. Chunk size: 500, overlap: 100
+2026-07-17 23:12:44,582 | INFO | EnterpriseKnowledgeAssistant | Text splitting completed. Created 316 chunks from 11 documents.
+2026-07-17 23:24:04,028 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-17 23:24:04,111 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-17 23:24:04,112 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-17 23:24:04,577 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-17 23:24:04,578 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 23:24:04,578 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-17 23:24:04,578 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-17 23:24:04,579 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-17 23:24:04,579 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-17 23:24:04,580 | INFO | EnterpriseKnowledgeAssistant | Starting text splitting for 11 documents. Chunk size: 500, overlap: 100
+2026-07-17 23:24:04,588 | INFO | EnterpriseKnowledgeAssistant | Text splitting completed. Created 316 chunks from 11 documents.
+2026-07-17 23:35:42,275 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized with model: nomic-embed-text
+2026-07-17 23:35:46,916 | INFO | EnterpriseKnowledgeAssistant | Generated query embedding with 768 dimensions.
+2026-07-17 23:35:47,011 | INFO | EnterpriseKnowledgeAssistant | Generated embeddings for 2 texts.
+2026-07-18 00:44:49,151 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-18 00:44:49,226 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-18 00:44:49,227 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-18 00:44:49,732 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-18 00:44:49,732 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-18 00:44:49,733 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-18 00:44:49,733 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-18 00:44:49,734 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-18 00:44:49,751 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-18 00:44:49,753 | INFO | EnterpriseKnowledgeAssistant | Starting text splitting for 11 documents. Chunk size: 500, overlap: 100
+2026-07-18 00:44:49,766 | INFO | EnterpriseKnowledgeAssistant | Text splitting completed. Created 316 chunks from 11 documents.
+2026-07-18 00:44:50,431 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized with model: nomic-embed-text
+2026-07-18 00:44:51,418 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: test_enterprise_knowledge, directory: vector_db/test
+2026-07-18 00:45:25,304 | INFO | EnterpriseKnowledgeAssistant | Added 316 documents to Chroma collection 'test_enterprise_knowledge'.
+2026-07-18 00:45:25,411 | INFO | EnterpriseKnowledgeAssistant | Similarity search with scores returned 5 documents.

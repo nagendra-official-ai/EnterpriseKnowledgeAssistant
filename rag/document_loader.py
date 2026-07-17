@@ -27,34 +27,26 @@ class DocumentLoader:
             ".txt": self.load_text,
         }
 
-
     def load_pdf(self, file_path: str) -> List[Document]:
         """
         Load PDF documents.
         """
 
         try:
-            self.logger.info(
-                f"Loading PDF document: {file_path}"
-            )
+            self.logger.info(f"Loading PDF document: {file_path}")
 
             loader = PyPDFLoader(file_path)
 
             documents = loader.load()
 
-            self.logger.info(
-                f"Loaded {len(documents)} pages"
-            )
+            self.logger.info(f"Loaded {len(documents)} pages")
 
             return documents
 
         except Exception as ex:
-            self.logger.error(
-                f"Error loading PDF {file_path}: {ex}"
-            )
+            self.logger.error(f"Error loading PDF {file_path}: {ex}")
 
             return []
-
 
     def load_docx(self, file_path: str) -> List[Document]:
         """
@@ -62,9 +54,7 @@ class DocumentLoader:
         """
 
         try:
-            self.logger.info(
-                f"Loading DOCX document: {file_path}"
-            )
+            self.logger.info(f"Loading DOCX document: {file_path}")
 
             loader = Docx2txtLoader(file_path)
 
@@ -73,12 +63,9 @@ class DocumentLoader:
             return documents
 
         except Exception as ex:
-            self.logger.error(
-                f"Error loading DOCX {file_path}: {ex}"
-            )
+            self.logger.error(f"Error loading DOCX {file_path}: {ex}")
 
             return []
-
 
     def load_text(self, file_path: str) -> List[Document]:
         """
@@ -86,31 +73,20 @@ class DocumentLoader:
         """
 
         try:
-            self.logger.info(
-                f"Loading TXT document: {file_path}"
-            )
+            self.logger.info(f"Loading TXT document: {file_path}")
 
-            loader = TextLoader(
-                file_path,
-                encoding="utf-8"
-            )
+            loader = TextLoader(file_path, encoding="utf-8")
 
             documents = loader.load()
 
             return documents
 
         except Exception as ex:
-            self.logger.error(
-                f"Error loading TXT {file_path}: {ex}"
-            )
+            self.logger.error(f"Error loading TXT {file_path}: {ex}")
 
             return []
 
-
-    def load_documents(
-        self,
-        directory_path: str
-    ) -> List[Document]:
+    def load_documents(self, directory_path: str) -> List[Document]:
         """
         Automatically load supported documents
         from a folder.
@@ -122,6 +98,9 @@ class DocumentLoader:
 
         for file in directory.iterdir():
 
+            if not file.is_file():
+                continue
+
             extension = file.suffix.lower()
             loader = self.supported_loaders.get(extension)
 
@@ -131,9 +110,6 @@ class DocumentLoader:
             else:
                 self.logger.warning(f"Unsupported file skipped: {file}")
 
-            self.logger.info(
-                f"Total documents loaded: {len(all_documents)}"
-        )
-
+            self.logger.info(f"Total documents loaded: {len(all_documents)}")
 
         return all_documents
