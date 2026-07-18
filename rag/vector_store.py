@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
+from langchain_core.vectorstores import VectorStoreRetriever
 
 from utils.logger import setup_logger
 
@@ -53,6 +54,53 @@ class VectorStore:
             self.collection_name,
             self.persist_directory,
         )
+
+    def as_retriever(
+        self,
+        result_count: int = 5,
+        search_type: str = "similarity",
+    ) -> VectorStoreRetriever:
+        """
+        Convert the Chroma vector store into a LangChain retriever.
+
+        Args:
+            result_count:
+                Maximum number of chunks returned for a query.
+
+            search_type:
+                Retrieval strategy. Initially, we use "similarity".
+
+        Returns:
+            Configured LangChain retriever.
+        """
+        if result_count <= 0:
+            raise ValueError("result_count must be greater than zero.")
+
+        supported_search_types = {
+            "similarity",
+            "mmr",
+            "similarity_score_threshold",
+        }
+
+        if search_type not in supported_search_types:
+            raise ValueError(f"Unsupported search type: {search_type}")
+
+        search_kwargs: dict = {
+            "k": result_count,
+        }
+
+        retriever = self.vector_store.as_retriever(
+            search_type=search_type,
+            search_kwargs=search_kwargs,
+        )
+
+        self.logger.info(
+            "Created retriever. Search type: %s, result count: %d",
+            search_type,
+            result_count,
+        )
+
+        return retriever
 
     def add_documents(
         self,

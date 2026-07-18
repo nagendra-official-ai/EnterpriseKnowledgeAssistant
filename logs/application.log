@@ -115,3 +115,25 @@
 2026-07-18 00:44:51,418 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: test_enterprise_knowledge, directory: vector_db/test
 2026-07-18 00:45:25,304 | INFO | EnterpriseKnowledgeAssistant | Added 316 documents to Chroma collection 'test_enterprise_knowledge'.
 2026-07-18 00:45:25,411 | INFO | EnterpriseKnowledgeAssistant | Similarity search with scores returned 5 documents.
+2026-07-18 22:53:25,821 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized with model: nomic-embed-text
+2026-07-18 22:53:26,903 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge, directory: vector_db/knowledge
+2026-07-18 22:53:26,903 | INFO | EnterpriseKnowledgeAssistant | Starting ingestion pipeline. Source: data/sample_documents
+2026-07-18 22:53:26,920 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge, directory: vector_db/knowledge
+2026-07-18 22:53:26,921 | INFO | EnterpriseKnowledgeAssistant | Vector-store collection rebuilt: enterprise_knowledge
+2026-07-18 22:53:26,921 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data\sample_documents\Employee_Handbook.docx
+2026-07-18 22:53:27,017 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-18 22:53:27,017 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data\sample_documents\HR_Policies.pdf
+2026-07-18 22:53:27,530 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-18 22:53:27,531 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-18 22:53:27,532 | WARNING | EnterpriseKnowledgeAssistant | Unsupported file skipped: data\sample_documents\Leave_Policy.xlsx
+2026-07-18 22:53:27,532 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 10
+2026-07-18 22:53:27,532 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data\sample_documents\Welcome.txt
+2026-07-18 22:53:27,568 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-18 22:53:27,569 | INFO | EnterpriseKnowledgeAssistant | Starting text splitting for 11 documents. Chunk size: 500, overlap: 100
+2026-07-18 22:53:27,579 | INFO | EnterpriseKnowledgeAssistant | Text splitting completed. Created 316 chunks from 11 documents.
+2026-07-18 22:54:02,282 | INFO | EnterpriseKnowledgeAssistant | Added 316 documents to Chroma collection 'enterprise_knowledge'.
+2026-07-18 22:54:02,284 | INFO | EnterpriseKnowledgeAssistant | Ingestion completed. Documents: 11, chunks: 316, stored: 316, collection count: 316
+2026-07-18 22:58:02,420 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized with model: nomic-embed-text
+2026-07-18 22:58:02,523 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge, directory: vector_db/knowledge
+2026-07-18 22:58:02,523 | INFO | EnterpriseKnowledgeAssistant | Created retriever. Search type: similarity, result count: 5
+2026-07-18 22:58:04,782 | INFO | EnterpriseKnowledgeAssistant | Retrieved 5 chunks for query: How many annual leave days are employees entitled to?
