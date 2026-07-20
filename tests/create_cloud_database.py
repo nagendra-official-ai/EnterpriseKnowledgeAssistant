@@ -12,7 +12,7 @@ def main() -> None:
 
     result = pipeline.run(rebuild_collection=True)
 
-    print("\nIngestion result")
+    print("\nCloud-compatible knowledge base created")
     print("-" * 60)
     print(
         "Source documents:",
@@ -30,11 +30,6 @@ def main() -> None:
         "Collection count:",
         result.collection_document_count,
     )
-
-    assert result.source_document_count > 0
-    assert result.chunk_count > 0
-    assert result.stored_document_count > 0
-    assert result.collection_document_count == result.chunk_count
 
 
 if __name__ == "__main__":

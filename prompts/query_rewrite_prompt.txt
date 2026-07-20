@@ -1,0 +1,24 @@
+You rewrite conversational questions into standalone questions for document retrieval.
+
+Use the conversation history only to resolve references such as:
+- it
+- they
+- that policy
+- those employees
+- the previous rule
+- this benefit
+
+Rules:
+1. Preserve the user's original intent.
+2. Do not answer the question.
+3. Do not introduce facts not present in the conversation.
+4. Return only the rewritten standalone question.
+5. If the question is already standalone, return it unchanged.
+
+Conversation history:
+{chat_history}
+
+Current user question:
+{question}
+
+Standalone question:

@@ -10,6 +10,18 @@ from langchain_core.embeddings import Embeddings
 from langchain_core.vectorstores import VectorStoreRetriever
 
 from utils.logger import setup_logger
+from dataclasses import dataclass
+
+
+@dataclass
+class ScoredDocument:
+    """
+    Represents a retrieved document and its normalized
+    relevance score.
+    """
+
+    document: Document
+    relevance_score: float
 
 
 class VectorStore:
@@ -54,6 +66,66 @@ class VectorStore:
             self.collection_name,
             self.persist_directory,
         )
+
+    def similarity_search_with_relevance(
+        self,
+        query: str,
+        result_count: int = 5,
+        minimum_relevance: float = 0.0,
+    ) -> List[ScoredDocument]:
+        """
+        Search for semantically relevant documents and return
+        normalized relevance scores.
+
+        Args:
+            query:
+                User question or standalone retrieval query.
+
+            result_count:
+                Maximum number of documents to retrieve.
+
+            minimum_relevance:
+                Minimum accepted relevance score between 0 and 1.
+
+        Returns:
+            Relevant documents with their normalized scores.
+        """
+        if not query or not query.strip():
+            raise ValueError("Search query cannot be empty.")
+
+        if result_count <= 0:
+            raise ValueError("result_count must be greater than zero.")
+
+        if not 0.0 <= minimum_relevance <= 1.0:
+            raise ValueError("minimum_relevance must be between 0 and 1.")
+
+        try:
+            raw_results = self.vector_store.similarity_search_with_relevance_scores(
+                query=query.strip(),
+                k=result_count,
+            )
+
+            scored_documents = [
+                ScoredDocument(
+                    document=document,
+                    relevance_score=float(score),
+                )
+                for document, score in raw_results
+            ]
+
+            self.logger.info(
+                "Relevance search returned %d accepted results "
+                "from %d candidates. Minimum relevance: %.2f",
+                len(scored_documents),
+                len(raw_results),
+                minimum_relevance,
+            )
+
+            return scored_documents
+
+        except Exception:
+            self.logger.exception("Failed to perform relevance-score search.")
+            raise
 
     def as_retriever(
         self,

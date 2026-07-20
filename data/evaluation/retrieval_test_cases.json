@@ -1,0 +1,33 @@
+[
+    {
+        "case_id": "annual-leave-entitlement",
+        "question": "How many annual leave days are employees entitled to?",
+        "expected_sources": [
+            "HR_Policies.pdf"
+        ],
+        "expected_keywords": [
+            "annual leave"
+        ]
+    },
+    {
+        "case_id": "leave-carry-forward",
+        "question": "Can unused annual leave be carried forward?",
+        "expected_sources": [
+            "HR_Policies.pdf"
+        ],
+        "expected_keywords": [
+            "leave",
+            "carry"
+        ]
+    },
+    {
+        "case_id": "employee-handbook",
+        "question": "What information is provided in the employee handbook?",
+        "expected_sources": [
+            "Employee_Handbook.docx"
+        ],
+        "expected_keywords": [
+            "employee"
+        ]
+    }
+]
