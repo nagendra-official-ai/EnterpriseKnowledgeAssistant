@@ -254,9 +254,11 @@ def render_welcome_message() -> None:
 
             You can ask questions such as:
 
-            - What is the annual leave policy?
-            - Can unused leave be carried forward?
             - What information is available in the employee handbook?
+            - Summarize contents of HR Policies?
+            - List paid leave of employees?
+            - Can unused leave be carried forward?
+            
             """)
 
 

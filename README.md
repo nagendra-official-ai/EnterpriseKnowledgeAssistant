@@ -49,7 +49,7 @@ Unlike traditional chatbots, the assistant retrieves relevant information from e
 
 ## 🎯 Why this project?
 
-Enterprise organizations store valuable knowledge across HR policies, employee handbooks, operational procedures, and technical documentation. Traditional keyword-based search often fails to provide contextual answers.
+Enterprise organizations store valuable knowledge across <b>HR policies, employee handbooks, operational procedures, and technical documentation</b>. Traditional keyword-based search often fails to provide contextual answers.
 
 This project demonstrates how Agentic AI and Retrieval-Augmented Generation (RAG) can transform enterprise document search into an intelligent conversational experience by combining semantic retrieval, conversational memory, and large language models.
 
