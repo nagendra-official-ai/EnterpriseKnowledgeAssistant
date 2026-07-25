@@ -810,3 +810,300 @@ Religious Observance
 2026-07-20 21:20:25,588 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 8 | score 0.1608 | source data\sample_documents\Employee_Handbook.docx | content Exempt employees are not subject to the overtime pay provisions of the federal Fair Labor Standards Act (FLSA). An exempt employee is one whose specific job duties and salary meet all of the requirements of the U.S. Department of Labor’s regulations. In general, an exempt employee is one who is paid
 2026-07-20 21:20:27,834 | INFO | EnterpriseKnowledgeAssistant | Added conversation exchange to session: e32120af-0e1a-4a71-9a9b-7a2ae8bdc740
 2026-07-20 21:20:27,834 | INFO | EnterpriseKnowledgeAssistant | Generated conversational RAG answer using 8 sources.
+2026-07-25 23:32:49,264 | INFO | EnterpriseKnowledgeAssistant | Knowledge base not found. Starting initial ingestion.
+2026-07-25 23:32:54,407 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized. Provider: huggingface, model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-25 23:32:55,038 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge_cloud, directory: vector_db/cloud
+2026-07-25 23:32:55,060 | INFO | EnterpriseKnowledgeAssistant | Starting ingestion pipeline. Source: data/sample_documents
+2026-07-25 23:32:55,061 | INFO | EnterpriseKnowledgeAssistant | Loading TXT document: data/sample_documents/Welcome.txt
+2026-07-25 23:32:55,062 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 1
+2026-07-25 23:32:55,063 | INFO | EnterpriseKnowledgeAssistant | Loading DOCX document: data/sample_documents/Employee_Handbook.docx
+2026-07-25 23:32:55,508 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 2
+2026-07-25 23:32:55,510 | INFO | EnterpriseKnowledgeAssistant | Loading PDF document: data/sample_documents/HR_Policies.pdf
+2026-07-25 23:32:57,079 | INFO | EnterpriseKnowledgeAssistant | Loaded 9 pages
+2026-07-25 23:32:57,079 | INFO | EnterpriseKnowledgeAssistant | Total documents loaded: 11
+2026-07-25 23:32:57,080 | INFO | EnterpriseKnowledgeAssistant | Starting text splitting for 11 documents. Chunk size: 500, overlap: 100
+2026-07-25 23:32:57,506 | INFO | EnterpriseKnowledgeAssistant | Text splitting completed. Created 316 chunks from 11 documents.
+2026-07-25 23:33:24,760 | INFO | EnterpriseKnowledgeAssistant | Added 316 documents to Chroma collection 'enterprise_knowledge_cloud'.
+2026-07-25 23:33:24,794 | INFO | EnterpriseKnowledgeAssistant | Ingestion completed. Documents: 11, chunks: 316, stored: 316, collection count: 316
+2026-07-25 23:33:24,796 | INFO | EnterpriseKnowledgeAssistant | Knowledge-base bootstrap completed. Documents: 11, chunks: 316
+2026-07-25 23:33:29,070 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized. Provider: huggingface, model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-25 23:33:29,126 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge_cloud, directory: vector_db/cloud
+2026-07-25 23:33:29,130 | INFO | EnterpriseKnowledgeAssistant | Created retriever. Search type: similarity, result count: 8
+2026-07-25 23:33:29,131 | INFO | EnterpriseKnowledgeAssistant | Creating chat model for provider: groq
+2026-07-25 23:33:29,773 | INFO | EnterpriseKnowledgeAssistant | Query engine initialized. Provider: groq, retrieved chunks: 8
+2026-07-25 23:38:04,444 | INFO | EnterpriseKnowledgeAssistant | Processing question for session 'd41760c8-def1-41c7-9aac-acfe8c705e86': list paid leaves of employees?
+2026-07-25 23:38:04,447 | INFO | EnterpriseKnowledgeAssistant | Created conversation session: d41760c8-def1-41c7-9aac-acfe8c705e86
+2026-07-25 23:38:04,791 | INFO | EnterpriseKnowledgeAssistant | Relevance search returned 24 accepted results from 24 candidates. Minimum relevance: 0.00
+2026-07-25 23:38:04,791 | INFO | EnterpriseKnowledgeAssistant | Confidence retrieval completed. Query: list paid leaves of employees?, candidates: 24, accepted: 8, highest relevance: 0.2611
+2026-07-25 23:38:04,793 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 1 | score 0.2611 | source data/sample_documents/Employee_Handbook.docx | content Part 3 – Compensation
+
+Payroll Practices
+2026-07-25 23:38:04,793 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 2 | score 0.2013 | source data/sample_documents/Employee_Handbook.docx | content Holiday Pay 
+
+Employees are entitled to the following paid holidays:
+
+
+
+	New Year’s Day
+
+	Birthday of Martin Luther King, Jr. 
+
+Washington’s Birthday
+
+	Memorial Day
+
+	Independence Day
+
+Labor Day
+
+[Columbus Day]
+
+[Veterans Day]
+
+Thanksgiving Day
+
+[Day after Thanksgiving]
+
+	Christmas Day
+
+Personal Lea
+2026-07-25 23:38:04,793 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 3 | score 0.1925 | source data/sample_documents/Employee_Handbook.docx | content sick time or vacation time in the event of tardiness or absence due to inclement weather. We have suggested here that employees be paid if they are unable to work because of a Company decision or government mandate. However, except for rules requiring payment with respect to exempt employees, there 
+2026-07-25 23:38:04,794 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 4 | score 0.1699 | source data/sample_documents/Employee_Handbook.docx | content Exempt employees are not subject to the overtime pay provisions of the federal Fair Labor Standards Act (FLSA). An exempt employee is one whose specific job duties and salary meet all of the requirements of the U.S. Department of Labor’s regulations. In general, an exempt employee is one who is paid
+2026-07-25 23:38:04,794 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 5 | score 0.1591 | source data/sample_documents/Employee_Handbook.docx | content S A M P L E
+
+
+
+
+
+Employee Handbook
+
+
+
+ABC Ltd
+
+
+
+A Guide For Our Employees
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Legal Disclaimer
+
+
+
+For Employers Only
+2026-07-25 23:38:04,795 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 6 | score 0.1542 | source data/sample_documents/Employee_Handbook.docx | content Vacation Options: There are innumerable variables regarding vacation. You may wish to specify that employees earn so many hours or days of vacation each month or each pay period, and prohibit use of vacation not yet accrued.
+2026-07-25 23:38:04,795 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 7 | score 0.1529 | source data/sample_documents/Employee_Handbook.docx | content 16th year of employment and following		Four (4) weeks]
+
+
+
+Part-time employees earn vacation on a pro-rata basis. For example, an employee who works 30 hours per week will earn ¾ of the amount of vacation a full-time employee earns, while an employee working one-half time earns one-half the vacation 
+2026-07-25 23:38:04,795 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 8 | score 0.1503 | source data/sample_documents/Employee_Handbook.docx | content employee explaining rights and responsibilities under the FMLA by including the notice in employee handbooks or other written guidance to employees concerning employee benefits or leave rights, if such written materials exist, or by distributing a copy of the general notice to each new employee upon
+2026-07-25 23:38:05,217 | ERROR | EnterpriseKnowledgeAssistant | Failed to generate the RAG answer.
+Traceback (most recent call last):
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/llm/query_engine.py", line 250, in ask
+    response = self.chat_model.invoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 476, in invoke
+    self.generate_prompt(
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1849, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1656, in generate
+    self._generate_with_cache(
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1994, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_groq/chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-07-25 23:38:05,238 | ERROR | EnterpriseKnowledgeAssistant | Knowledge-assistant workflow failed.
+Traceback (most recent call last):
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/agents/workflow.py", line 91, in _process_question
+    response = self.query_engine.ask(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/llm/query_engine.py", line 250, in ask
+    response = self.chat_model.invoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 476, in invoke
+    self.generate_prompt(
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1849, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1656, in generate
+    self._generate_with_cache(
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1994, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/langchain_groq/chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nagendra/Documents/AIEngineerJourney/Projects/EnterpriseKnowledgeAssistant/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-07-25 23:38:05,245 | ERROR | EnterpriseKnowledgeAssistant | Workflow error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-07-25 23:39:16,441 | INFO | EnterpriseKnowledgeAssistant | Knowledge base already exists: vector_db/cloud
+2026-07-25 23:39:22,107 | INFO | EnterpriseKnowledgeAssistant | Embedding service initialized. Provider: huggingface, model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-25 23:39:22,555 | INFO | EnterpriseKnowledgeAssistant | Chroma vector store initialized. Collection: enterprise_knowledge_cloud, directory: vector_db/cloud
+2026-07-25 23:39:22,555 | INFO | EnterpriseKnowledgeAssistant | Created retriever. Search type: similarity, result count: 8
+2026-07-25 23:39:22,558 | INFO | EnterpriseKnowledgeAssistant | Creating chat model for provider: groq
+2026-07-25 23:39:23,043 | INFO | EnterpriseKnowledgeAssistant | Query engine initialized. Provider: groq, retrieved chunks: 8
+2026-07-25 23:40:52,298 | INFO | EnterpriseKnowledgeAssistant | Processing question for session '46433b48-bb96-4936-be0d-c1d5f232c4c1': Summarize contents of HR Policies?
+2026-07-25 23:40:52,301 | INFO | EnterpriseKnowledgeAssistant | Created conversation session: 46433b48-bb96-4936-be0d-c1d5f232c4c1
+2026-07-25 23:40:53,326 | INFO | EnterpriseKnowledgeAssistant | Relevance search returned 24 accepted results from 24 candidates. Minimum relevance: 0.00
+2026-07-25 23:40:53,331 | INFO | EnterpriseKnowledgeAssistant | Confidence retrieval completed. Query: Summarize contents of HR Policies?, candidates: 24, accepted: 8, highest relevance: 0.3262
+2026-07-25 23:40:53,331 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 1 | score 0.3262 | source data/sample_documents/Employee_Handbook.docx | content a specific period of time. The purpose of the Handbook is simply to provide you with a convenient explanation of present policies and practices at the Company. This Handbook is an overview or a guideline. It cannot cover every matter that might arise in the workplace. For this reason, specific quest
+2026-07-25 23:40:53,331 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 2 | score 0.2984 | source data/sample_documents/Employee_Handbook.docx | content to employees’ attentions the variables in benefits and policies applicable to different groups of employees.
+2026-07-25 23:40:53,332 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 3 | score 0.2823 | source data/sample_documents/HR_Policies.pdf | content shifts. 
+• Document metric changes: Any adjustments to core performance expectations require formal 
+updates in HR software.
+2026-07-25 23:40:53,332 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 4 | score 0.2789 | source data/sample_documents/Employee_Handbook.docx | content Introduction
+
+This Employee Handbook (“Handbook”) is a compilation of personnel policies, practices and procedures currently in effect at ABC Ltd (“Company”).
+
+
+
+The Handbook is designed to introduce you to our Company, familiarize you with Company policies, provide general guidelines on work rules,
+2026-07-25 23:40:53,332 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 5 | score 0.2565 | source data/sample_documents/HR_Policies.pdf | content • Accommodate cultural needs: The company provides inclusive spaces, including nursing rooms 
+and quiet prayer areas. 
+2.3. Anti-Discrimination Framework 
+• Apply uniform standards: Promotions, transfers, and training access depend strictly on 
+documented performance metrics. 
+• Eliminate systemic b
+2026-07-25 23:40:53,333 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 6 | score 0.2515 | source data/sample_documents/HR_Policies.pdf | content behavior to HR. 
+• Enforce corrective actions: Violations of anti-discrimination rules trigger formal demotions or 
+immediate contract dismissal. 
+ 
+3. INTELLECTUAL PROPERTY & CONFIDENTIALITY 
+3.1. Non-Disclosure Agreements (NDA) 
+• Sign upon onboarding: Every employee must execute a comprehensive N
+2026-07-25 23:40:53,335 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 7 | score 0.2498 | source data/sample_documents/Employee_Handbook.docx | content maintenance organization (HMO). An employee contribution for coverage will be deducted from your salary based on your benefit selections. Your Summary Plan Description (SPD) contains more details about these plans. For more details, please refer to the specific SPD that governs each of the plans. In
+2026-07-25 23:40:53,335 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 8 | score 0.2374 | source data/sample_documents/Employee_Handbook.docx | content Attendance and Punctuality	2
+
+	Inclement Weather	2
+
+	Dress Code and Public Image	2
+
+	Workspace	2
+
+	Office Equipment	2
+
+	Personnel Records	2
+
+	Performance Reviews, Salary Reviews	2
+
+	Internet Access	2
+
+	Right to Monitor	2
+
+	Responsibilities and Obligations	2
+
+	Violation of this Policy	2
+
+	Email	2
+
+	C
+2026-07-25 23:40:54,726 | INFO | EnterpriseKnowledgeAssistant | Added conversation exchange to session: 46433b48-bb96-4936-be0d-c1d5f232c4c1
+2026-07-25 23:40:54,727 | INFO | EnterpriseKnowledgeAssistant | Generated conversational RAG answer using 8 sources.
+2026-07-25 23:41:12,215 | INFO | EnterpriseKnowledgeAssistant | Processing question for session '46433b48-bb96-4936-be0d-c1d5f232c4c1': list of paid leaves of employees?
+2026-07-25 23:41:12,881 | INFO | EnterpriseKnowledgeAssistant | Rewritten retrieval question: What are the types of paid leaves available to employees according to the HR Policies?
+2026-07-25 23:41:12,958 | INFO | EnterpriseKnowledgeAssistant | Relevance search returned 24 accepted results from 24 candidates. Minimum relevance: 0.00
+2026-07-25 23:41:12,960 | INFO | EnterpriseKnowledgeAssistant | Confidence retrieval completed. Query: What are the types of paid leaves available to employees according to the HR Policies?, candidates: 24, accepted: 8, highest relevance: 0.3250
+2026-07-25 23:41:12,960 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 1 | score 0.3250 | source data/sample_documents/Employee_Handbook.docx | content Part 3 – Compensation
+
+Payroll Practices
+2026-07-25 23:41:12,960 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 2 | score 0.3153 | source data/sample_documents/Employee_Handbook.docx | content The following terms will be used to describe employment classifications and status:
+
+Exempt Employees
+2026-07-25 23:41:12,960 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 3 | score 0.2878 | source data/sample_documents/Employee_Handbook.docx | content Exempt employees are not subject to the overtime pay provisions of the federal Fair Labor Standards Act (FLSA). An exempt employee is one whose specific job duties and salary meet all of the requirements of the U.S. Department of Labor’s regulations. In general, an exempt employee is one who is paid
+2026-07-25 23:41:12,960 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 4 | score 0.2877 | source data/sample_documents/Employee_Handbook.docx | content sick time or vacation time in the event of tardiness or absence due to inclement weather. We have suggested here that employees be paid if they are unable to work because of a Company decision or government mandate. However, except for rules requiring payment with respect to exempt employees, there 
+2026-07-25 23:41:12,961 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 5 | score 0.2820 | source data/sample_documents/Employee_Handbook.docx | content Temporary Employees
+
+Employees hired for an interim period of time, usually to fill in for vacations, leaves of absence, or projects of a limited duration. Temporary employees are not eligible for Company paid benefits, except as required by law. 
+
+Orientation and Training
+2026-07-25 23:41:12,961 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 6 | score 0.2679 | source data/sample_documents/Employee_Handbook.docx | content Vacation Options: There are innumerable variables regarding vacation. You may wish to specify that employees earn so many hours or days of vacation each month or each pay period, and prohibit use of vacation not yet accrued.
+2026-07-25 23:41:12,961 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 7 | score 0.2662 | source data/sample_documents/HR_Policies.pdf | content • Submit via HR portal: Resignations are valid only when submitted formally through the employee 
+portal. 
+• Manage notice buyouts: Company leadership must explicitly approve any financial buyouts of 
+notice periods. 
+• Restrict leave usage: Employees cannot apply for planned vacation time during ac
+2026-07-25 23:41:12,961 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 8 | score 0.2545 | source data/sample_documents/Employee_Handbook.docx | content We operate in numerous states within the United States. State, local, and federal employment laws change with some frequency, either as a result of a judicial decision or new legislation or regulations. Although we seek to monitor the laws in all states where we have employees, our Handbook may not 
+2026-07-25 23:41:13,559 | INFO | EnterpriseKnowledgeAssistant | Added conversation exchange to session: 46433b48-bb96-4936-be0d-c1d5f232c4c1
+2026-07-25 23:41:13,560 | INFO | EnterpriseKnowledgeAssistant | Generated conversational RAG answer using 8 sources.
+2026-07-25 23:41:34,244 | INFO | EnterpriseKnowledgeAssistant | Processing question for session '46433b48-bb96-4936-be0d-c1d5f232c4c1': list paid leaves of employees?
+2026-07-25 23:41:34,788 | INFO | EnterpriseKnowledgeAssistant | Rewritten retrieval question: What are the types of paid leaves available to employees?
+2026-07-25 23:41:34,858 | INFO | EnterpriseKnowledgeAssistant | Relevance search returned 24 accepted results from 24 candidates. Minimum relevance: 0.00
+2026-07-25 23:41:34,858 | INFO | EnterpriseKnowledgeAssistant | Confidence retrieval completed. Query: What are the types of paid leaves available to employees?, candidates: 24, accepted: 8, highest relevance: 0.2308
+2026-07-25 23:41:34,859 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 1 | score 0.2308 | source data/sample_documents/Employee_Handbook.docx | content Vacation Options: There are innumerable variables regarding vacation. You may wish to specify that employees earn so many hours or days of vacation each month or each pay period, and prohibit use of vacation not yet accrued.
+2026-07-25 23:41:34,859 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 2 | score 0.2138 | source data/sample_documents/Employee_Handbook.docx | content 16th year of employment and following		Four (4) weeks]
+
+
+
+Part-time employees earn vacation on a pro-rata basis. For example, an employee who works 30 hours per week will earn ¾ of the amount of vacation a full-time employee earns, while an employee working one-half time earns one-half the vacation 
+2026-07-25 23:41:34,859 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 3 | score 0.2069 | source data/sample_documents/Employee_Handbook.docx | content Part 3 – Compensation
+
+Payroll Practices
+2026-07-25 23:41:34,859 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 4 | score 0.2030 | source data/sample_documents/Employee_Handbook.docx | content sick time or vacation time in the event of tardiness or absence due to inclement weather. We have suggested here that employees be paid if they are unable to work because of a Company decision or government mandate. However, except for rules requiring payment with respect to exempt employees, there 
+2026-07-25 23:41:34,859 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 5 | score 0.2012 | source data/sample_documents/Employee_Handbook.docx | content Exempt employees are not subject to the overtime pay provisions of the federal Fair Labor Standards Act (FLSA). An exempt employee is one whose specific job duties and salary meet all of the requirements of the U.S. Department of Labor’s regulations. In general, an exempt employee is one who is paid
+2026-07-25 23:41:34,860 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 6 | score 0.1886 | source data/sample_documents/Employee_Handbook.docx | content The following terms will be used to describe employment classifications and status:
+
+Exempt Employees
+2026-07-25 23:41:34,860 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 7 | score 0.1859 | source data/sample_documents/Employee_Handbook.docx | content Temporary Employees
+
+Employees hired for an interim period of time, usually to fill in for vacations, leaves of absence, or projects of a limited duration. Temporary employees are not eligible for Company paid benefits, except as required by law. 
+
+Orientation and Training
+2026-07-25 23:41:34,860 | INFO | EnterpriseKnowledgeAssistant | Retrieved result 8 | score 0.1739 | source data/sample_documents/Employee_Handbook.docx | content Travel
+
+Details of the Company’s Travel and Expense Reimbursement Policy are contained in the appendix to this Handbook.
+
+Part 5 – Holidays, Vacation and Other Leave
+
+Religious Observance
+2026-07-25 23:41:35,480 | INFO | EnterpriseKnowledgeAssistant | Added conversation exchange to session: 46433b48-bb96-4936-be0d-c1d5f232c4c1
+2026-07-25 23:41:35,481 | INFO | EnterpriseKnowledgeAssistant | Generated conversational RAG answer using 8 sources.
